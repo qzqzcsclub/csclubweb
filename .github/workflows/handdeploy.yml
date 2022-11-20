@@ -1,0 +1,25 @@
+name: Hand Deploy # 部署
+
+on: # 触发条件
+  workflow_dispatch: # 手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 若服务器是从 Gitee 克隆源码请将最后一行改为下一行代码
+      # git clone git@gitee.com:qzcsclub/csclubweb.git
+      - name: VPS clone Gitee  # 连接服务器并克隆Gitee
+        uses: cross-the-world/ssh-pipeline@master
+        env:
+           WELCOME: "ssh pipeline"
+        with:
+           host: ${{ secrets.USER_HOST }}
+           user: ${{ secrets.USER_NAME }}
+           pass: ${{ secrets.USER_PASS }}
+           connect_timeout: 10s
+           script: |
+             cd ${{ secrets.VPS_SITE }}
+             rm -rf csclubweb
+             git clone git@github.com:qzcsclub/csclubweb.git

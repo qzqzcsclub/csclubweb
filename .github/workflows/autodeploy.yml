@@ -1,0 +1,77 @@
+name: Deploy # 部署
+
+on: # 触发条件
+  push:
+    branches:
+      - main # 推送到 main 分支（这里的分支名很重要，不要弄错了）
+
+  release:
+    types:
+      - published # 推送新版本号
+
+  workflow_dispatch: # 手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout # Checkout 仓库
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Setup Node # 安装 Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
+
+      - name: Install Hexo # 安装 Hexo
+        run: |
+          npm install hexo-cli -g
+      - name: Cache Modules # 缓存 Node 插件
+        uses: actions/cache@v1
+        id: cache-modules
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+      - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
+        if: steps.cache-modules.outputs.cache-hit != 'true'
+        run: | # **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**
+          npm set registry https://registry.npm.taobao.org/
+          npm ci
+
+      - name: Generate # 生成
+        run: |
+          hexo clean
+          hexo generate
+
+      # 若服务器是从 Gitee 克隆源码请添加下面这行代码到下面的run的最后一行
+      # git push --force --quiet "https://qzcsclub:${{ secrets.GITEE_TOKEN }}@gitee.com/qzcsclub/csclubweb.git" master:main
+      - name: Deploy # 部署
+        run: |
+          cd ./public
+          git init
+          git config --global user.name 'qzcsclub'
+          git config --global user.email 'qzcsclub@outlook.com'
+          git add .
+          git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
+          git push --force --quiet "https://qzcsclub:${{ secrets.GITH_TOKEN }}@github.com/qzcsclub/qzcsclub.github.io.git" master:main
+
+      # 请先在服务器配置git远程连接到你的 Gitee 仓库
+      # 若服务器是从 Gitee 克隆源码请将最后一行改为下一行代码
+      # git clone git@gitee.com:qzcsclub/csclubweb.git
+      - name: VPS clone Gitee  # 连接服务器并克隆Gitee
+        uses: cross-the-world/ssh-pipeline@master
+        env:
+           WELCOME: "ssh pipeline"
+        with:
+           host: ${{ secrets.USER_HOST }}
+           user: ${{ secrets.USER_NAME }}
+           pass: ${{ secrets.USER_PASS }}
+           connect_timeout: 10s
+           script: |
+             cd ${{ secrets.VPS_SITE }}
+             rm -rf csclubweb
+             git clone git@github.com:qzcsclub/csclubweb.git
