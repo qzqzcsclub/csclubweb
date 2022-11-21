@@ -71,4 +71,4 @@ jobs:
            script: |
              cd ${{ secrets.VPS_SITE }}
              rm -rf csclubweb
-             git clone git@gitee.com:qzcsclub/csclubweb.git
+             git clone https://gitee.com/qzcsclub/csclubweb.git
