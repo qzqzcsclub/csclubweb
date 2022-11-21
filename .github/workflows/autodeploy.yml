@@ -47,8 +47,6 @@ jobs:
           hexo clean
           hexo generate
 
-      # 若服务器是从 Gitee 克隆源码请添加下面这行代码到下面的run的最后一行
-      # git push --force --quiet "https://qzcsclub:${{ secrets.GITEE_TOKEN }}@gitee.com/qzcsclub/csclubweb.git" master:main
       - name: Deploy # 部署
         run: |
           cd ./public
@@ -58,10 +56,9 @@ jobs:
           git add .
           git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
           git push --force --quiet "https://qzcsclub:${{ secrets.GITH_TOKEN }}@github.com/qzcsclub/qzcsclub.github.io.git" master:main
+          git push --force --quiet "https://qzcsclub:${{ secrets.GITEE_TOKEN }}@gitee.com/qzcsclub/csclubweb.git" master:main
 
-      # 请先在服务器配置git远程连接到你的 Gitee 仓库
-      # 若服务器是从 Gitee 克隆源码请将最后一行改为下一行代码
-      # git clone git@gitee.com:qzcsclub/csclubweb.git
+      # 请先在服务器配置git
       - name: VPS clone Gitee  # 连接服务器并克隆Gitee
         uses: cross-the-world/ssh-pipeline@master
         env:
@@ -74,4 +71,4 @@ jobs:
            script: |
              cd ${{ secrets.VPS_SITE }}
              rm -rf csclubweb
-             git clone git@github.com:qzcsclub/csclubweb.git
+             git clone git@gitee.com:qzcsclub/csclubweb.git
