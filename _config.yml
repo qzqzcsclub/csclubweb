@@ -6,14 +6,14 @@
 title: 泉州七中网络安全社
 subtitle: 'Cyber Security Club'
 description: '泉州七中网络安全社官方网站'
-keywords: csclub,qzqz,cybersecurityclub,sevin,泉州七中,社团,网安社,网络安全社,网络安全,网安,chy,xcloudfance,泉州七中网络安全社,七中,编程社,编程,我的世界,高中
+keywords: csclub,qzqz,cybersecurityclub,泉州七中,社团,网安社,网络安全社,泉州七中网络安全社,编程社
 author: ITSevin
 language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://csclubweb.vercel.app/
+url: https://qzcsclub.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
