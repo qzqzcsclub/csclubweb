@@ -6,10 +6,10 @@
 title: 泉州七中网络安全社
 subtitle: 'Cyber Security Club'
 description: '泉州七中网络安全社官方网站'
-keywords: csclub,qzqz,cybersecurityclub,泉州七中,社团,网安社,网络安全社,泉州七中网络安全社,编程社
+keywords: csclub,泉州七中,网安社,网络安全社,泉州七中网络安全社,编程社
 author: ITSevin
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

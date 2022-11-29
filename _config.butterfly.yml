@@ -3,15 +3,20 @@
 # --------------------------------------
 
 menu:
-  Home: / || fas fa-home
-  Archives: /archives/ || fas fa-archive
-  Tags: /tags/ || fas fa-tags
-  Categories: /categories/ || fas fa-folder-open
-  List||fas fa-list:
-    Music: /music/ || fas fa-music
-    Movie: /movies/ || fas fa-video
-  Link: /link/ || fas fa-link
-  About: /about/ || fas fa-heart
+  主页: / || fas fa-home
+  纳新: /admission/ || fas fa-home
+  介绍: /introduction/ || fas fa-home
+  通知||fas fa-list:
+    对外通知: /external_notice/ || fas fa-home
+    内部通知: /internal_notice/ || fas fa-home
+  博文: /blog/ || fas fa-home
+  教程: /tags/ || fas fa-home
+  帮助||fas fa-list:
+    网站使用指南: /user_guide/ || fas fa-home
+    网站维护指南: /admin_guide/ || fas fa-home
+  其他||fas fa-list:
+    友链: /link/ || fas fa-link
+    联系方式: /admin_guide/ || fas fa-home
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -132,7 +137,7 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: 'Page Not Found'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
