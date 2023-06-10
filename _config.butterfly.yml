@@ -42,7 +42,7 @@ copy:
 social:
   fab fa-github: https://github.com/qzqzcsclub || GitHub
   fas fa-envelope: mailto:qzcsclub@outlook.com || Email
-  fas fa-rss: https://qzcsclub.github.com/feed.xml || RSS
+  fas fa-rss: https://qzcsclub.github.io/feed.xml || RSS
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
