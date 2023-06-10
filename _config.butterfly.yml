@@ -40,7 +40,6 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/qzcsclub || GitHub
   fab fa-github: https://github.com/qzqzcsclub || GitHub
   fas fa-envelope: mailto:qzcsclub@outlook.com || Email
   fas fa-rss: https://qzcsclub.github.com/feed.xml || RSS
