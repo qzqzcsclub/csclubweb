@@ -1,23 +1,51 @@
-- class_name: 友情链接
+- class_name: 历届优秀社员（部分）
   class_desc: 那些人，那些事
   link_list:
-    - name: Hexo
-      link: https://hexo.io/zh-tw/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、简单且强大的网誌框架
+    - name: LanceLot
+      link: https://github.com/XcloudFance
+      avatar: https://avatars.githubusercontent.com/u/34064977?v=4
+      descr: 网安社创始人兼荣誉社长，22届
+    - name: Hallon Ju
+      link: https://github.com/Hallon233
+      avatar: https://avatars.githubusercontent.com/u/28214389?v=4
+      descr: 网安社23届城南校区社长
+    - name: GregTao
+      link: https://github.com/gregtaoo
+      avatar: https://avatars.githubusercontent.com/u/61447884?v=4
+      descr: 网安社24届城南校区社长
+    - name: 易安cattt
+      link: https://space.bilibili.com/351954679
+      avatar: https://i1.hdslb.com/bfs/face/286e409335b7b7988834a79c52ebb66e070837d7.jpg
+      descr: 网安社24届江南校区社长
+    - name: Sevin
+      link: https://github.com/itsevin
+      avatar: https://avatars.githubusercontent.com/u/104713034?v=4
+      descr: 网安社24届城南校区副社长
 
-- class_name: 网站
-  class_desc: 值得推荐的网站
+- class_name: 推荐站点
+  class_desc: 这里都是一些很不错的站点
   link_list:
-    - name: Youtube
-      link: https://www.youtube.com/
-      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 视频网站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中国最大社交分享平台
-    - name: Twitter
-      link: https://twitter.com/
-      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
+    - name: GitHub
+      link: https://github.com/
+      avatar: https://github.com/favicon.ico
+      descr: GitHub是一个面向开源及私有软件项目的托管平台
+    - name: 菜鸟教程
+      link: https://www.runoob.com/
+      avatar: https://www.runoob.com/favicon.ico
+      descr: 适合新手入门各种语言编程的教学网站
+    - name: 哔哩哔哩
+      link: https://www.bilibili.com/
+      avatar: https://www.bilibili.com/favicon.ico
+      descr: 中国年轻世代高度聚集的文化社区和视频平台
+    - name: Gitee
+      link: https://gitee.com/
+      avatar: https://gitee.com/favicon.ico
+      descr: 国内代码托管平台，类似GitHub
+    - name: CSDN
+      link: https://www.csdn.net/
+      avatar: https://www.csdn.net/favicon.ico
+      descr: 国内非常受欢迎的专业IT社区
+    - name: 百度
+      link: https://www.baidu.com/
+      avatar: https://www.baidu.com/favicon.ico
+      descr: 国内搜索引擎之一
