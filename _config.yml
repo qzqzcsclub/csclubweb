@@ -103,7 +103,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    repo: git@github.com:qzqzcsclub/csclubweb.git    
+    repo: git@github.com:qzcsclub/qzcsclub.github.io.git    
     branch: main
     message: 
   - type: baidu_url_submitter                           
