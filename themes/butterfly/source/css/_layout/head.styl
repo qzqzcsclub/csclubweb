@@ -42,10 +42,10 @@
 
   #site-subtitle
     color: var(--light-grey)
-    font-size: 1.15em
+    font-size: 1.05em
 
     +minWidth768()
-      font-size: 1.72em
+      font-size: 1.40em
 
   #site_social_icons
     display: none
@@ -301,10 +301,10 @@
         margin-top: 8px
         padding: 0
         width: max-content
-        border-radius: 5px
         background-color: var(--sidebar-bg)
         box-shadow: 0 5px 20px -4px rgba($dark-black, .5)
         animation: sub_menus .3s .1s ease both
+        border-radius: 5px
 
         &:before
           position: absolute
@@ -321,13 +321,9 @@
             background: var(--text-bg-hover)
 
           &:first-child
-            border-top-left-radius: 5px
-            border-top-right-radius: 5px
-
+            border-radius: 5px 5px 0 0
           &:last-child
-            border-bottom-right-radius: 5px
-            border-bottom-left-radius: 5px
-
+            border-radius: 0 0 5px 5px
           a
             display: inline-block
             padding: 8px 16px
