@@ -56,19 +56,21 @@ jobs:
           git add .
           git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
           git push --force --quiet "https://qzcsclub:${{ secrets.GITH_TOKEN }}@github.com/qzcsclub/qzcsclub.github.io.git" master:main
-          git push --force --quiet "https://qzcsclub:${{ secrets.GITEE_TOKEN }}@gitee.com/qzcsclub/csclubweb.git" master:main
+      # 以下部分为部署站点到服务器的代码，因为社团服务器到期就注释掉了，以后有需要可以启用。
+      # USER_HOST为服务器ip，USER_NAME为服务器登录用户名，USER_PASS为服务器登录密码，VPS_SITE为站点路径，这些千万不要直接在下面替换掉（防止泄露），应在github的action的secret设置
+      #     git push --force --quiet "https://qzcsclub:${{ secrets.GITEE_TOKEN }}@gitee.com/qzcsclub/csclubweb.git" master:main
 
-      # 请先在服务器配置git
-      - name: VPS clone Gitee  # 连接服务器并克隆Gitee
-        uses: cross-the-world/ssh-pipeline@master
-        env:
-           WELCOME: "ssh pipeline"
-        with:
-           host: ${{ secrets.USER_HOST }}
-           user: ${{ secrets.USER_NAME }}
-           pass: ${{ secrets.USER_PASS }}
-           connect_timeout: 10s
-           script: |
-             cd ${{ secrets.VPS_SITE }}
-             rm -rf csclubweb
-             git clone https://gitee.com/qzcsclub/csclubweb.git
+      # # 请先在服务器配置git
+      # - name: VPS clone Gitee  # 连接服务器并克隆Gitee
+      #   uses: cross-the-world/ssh-pipeline@master
+      #   env:
+      #      WELCOME: "ssh pipeline"
+      #   with:
+      #      host: ${{ secrets.USER_HOST }}
+      #      user: ${{ secrets.USER_NAME }}
+      #      pass: ${{ secrets.USER_PASS }}
+      #      connect_timeout: 10s
+      #      script: |
+      #        cd ${{ secrets.VPS_SITE }}
+      #        rm -rf csclubweb
+      #        git clone https://gitee.com/qzcsclub/csclubweb.git

@@ -81,21 +81,21 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /themes/butterfly/source/img/favicon.ico
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: /themes/butterfly/source/img/favicon.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: /themes/butterfly/source/img/background.png
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: themes\butterfly\source\img\top_img.jpg
 
 # The banner image of archive page
 archive_img:
@@ -158,7 +158,7 @@ post_meta:
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -251,7 +251,7 @@ addThis:
 # https://github.com/overtrue/share.js
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: wechat,weibo,qq
 
 # AddToAny
 # https://www.addtoany.com/
