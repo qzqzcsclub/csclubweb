@@ -1,4 +1,10 @@
 ---
-title: admission
+title: 社团纳新
 date: 2023-06-22 15:14:17
 ---
+
+> 以下内容非最新内容（比如群聊二维码没改），最新纳新事务相关信息将在接近纳新时推出
+
+# 海报
+
+![poster](https://s2.loli.net/2023/06/22/XTimcSa6e92Hxv8.png)
