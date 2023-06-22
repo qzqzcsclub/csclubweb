@@ -1,4 +1,4 @@
 ---
-title: introduction
+title: 社团介绍
 date: 2023-06-10 00:00:00
 ---
