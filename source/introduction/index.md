@@ -27,7 +27,7 @@ date: 2023-06-10 00:00:00
 
 活动主要以计算机相关教学（如Python教学）为主，还有其他各种有趣的社团活动。
 
-![社员参加学生信息素养提升实践活动程序代码截图.png](https://s2.loli.net/2023/06/22/XVcKFLQDwsIB9YR.png)
+![社员参加学生信息素养提升实践活动程序代码截图](https://s2.loli.net/2023/06/22/XVcKFLQDwsIB9YR.png)
 
 # 社团特色
 
@@ -46,6 +46,32 @@ date: 2023-06-10 00:00:00
 ## 氛围良好
 
 社团里有不少积极、思维创新的社员，社团长期活跃（~~日常吹水聊天~~）。
+
+# 社员优秀项目展示
+
+## QQ机器人-不正经的妹妹
+
+由[24届城南副社Sevin](https://github.com/itsevin/)开发的QQ机器人，在泉州七中各个段群里广泛使用，保持了段群的活跃。
+
+项目仓库： https://github.com/itsevin/sister_bot
+
+![](https://s2.loli.net/2023/06/22/ksehZKGFPp2vE1c.png)
+
+## 青荇搜索
+
+由[22届城南社长LanceLot](https://github.com/XcloudFance/)开发的搜索引擎
+
+项目仓库： https://github.com/XcloudFance/Verdant_Search
+
+![](https://raw.githubusercontent.com/XcloudFance/Verdant_Search/master/images/20220411125522.jpg)
+
+## GregBlog
+
+由[24届城南社长GregTao](https://github.com/gregtaoo/)基于php开发的博客网站
+
+运行于 http://81.71.133.124/
+
+项目仓库： https://github.com/GregTaoo/GregBlog3
 
 ---
 ***Tech Otakus Save The World.***
