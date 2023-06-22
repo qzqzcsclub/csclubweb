@@ -516,7 +516,7 @@ tag_ui: # 留空或 index
 background:
 
 # Footer Background
-footer_bg: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fdesk-fd.zol-img.com.cn%2Ft_s960x600c5%2Fg3%2FM02%2F0D%2F0B%2FCg-4V1Qg1_KIT0d9AB1awdAhrBkAAPUZQGJbBcAHVrZ775.jpg&refer=http%3A%2F%2Fdesk-fd.zol-img.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1663472428&t=424f9b627a5ceb4ea1fcbfbffd431dad
+footer_bg: /img/footer.jpg
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
