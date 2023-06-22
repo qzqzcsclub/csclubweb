@@ -4,8 +4,8 @@
 
 menu:
   主页: / || fas fa-home
-  纳新: /admission/ || fa-solid fa-sparkles
-  介绍: /introduction/ || fa-solid fa-sun
+  纳新: /admission/ || fa-solid fa-sun
+  介绍: /introduction/ || fa-solid fa-circle-info
   通知||fas fa-list:
     对外通知: /external_notice/ || fa-solid fa-bell
     内部通知: /internal_notice/ || fa-solid fa-bell
