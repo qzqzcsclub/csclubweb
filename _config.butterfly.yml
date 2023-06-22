@@ -10,7 +10,7 @@ menu:
     对外通知: /categories/对外通知/ || fa-solid fa-bell
     内部通知: /categories/内部通知/ || fa-solid fa-bell
   教程: /tags/ || fa-solid fa-book
-  帮助||/user_guide/ || fa-solid fa-circle-question:
+  帮助||fa-solid fa-circle-question:
     网站使用指南: /user_guide/ || fa-solid fa-question
     网站维护指南: /admin_guide/ || fa-solid fa-question
   其他||fas fa-list:
