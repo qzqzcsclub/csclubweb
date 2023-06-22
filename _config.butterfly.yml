@@ -6,13 +6,13 @@ menu:
   主页: / || fas fa-home
   纳新: /admission/ || fa-solid fa-sun
   介绍: /introduction/ || fa-solid fa-circle-info
-  通知||fas fa-list:
+  通知||fa-solid fa-bells:
     对外通知: /external_notice/ || fa-solid fa-bell
     内部通知: /internal_notice/ || fa-solid fa-bell
   教程: /tags/ || fa-solid fa-book
-  帮助||fas fa-list:
-    网站使用指南: /user_guide/ || fa-solid fa-circle-question
-    网站维护指南: /admin_guide/ || fa-solid fa-circle-question
+  帮助||/user_guide/ || fa-solid fa-circle-question:
+    网站使用指南: /user_guide/ || fa-solid fa-question
+    网站维护指南: /admin_guide/ || fa-solid fa-question
   其他||fas fa-list:
     友链: /link/ || fas fa-link
     联系方式: /admin_guide/ || fa-solid fa-envelope
