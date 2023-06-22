@@ -69,8 +69,6 @@ date: 2023-06-10 00:00:00
 
 由[24届城南社长GregTao](https://github.com/gregtaoo/)基于php开发的博客网站
 
-运行于 http://81.71.133.124/
-
 项目仓库： https://github.com/GregTaoo/GregBlog3
 
 ---
