@@ -15,7 +15,7 @@ menu:
     网站维护指南: /admin_guide/ || fa-solid fa-question
   其他||fas fa-list:
     友链: /link/ || fas fa-link
-    联系方式: /admin_guide/ || fa-solid fa-envelope
+    联系方式: /contact/ || fa-solid fa-envelope
 
 # Code Blocks (代碼相關)
 # --------------------------------------
