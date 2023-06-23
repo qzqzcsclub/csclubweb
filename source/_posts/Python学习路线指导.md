@@ -1,12 +1,13 @@
 ---
 title: Python学习路线指导
-date: 2023-06-23 11:22:28
 tags: python
-categories: 
+categories:
   - 教程
 description: Python简单介绍以及学习路线指导
 copyright_author: ITSevin
-copyright_author_href: https://github.com/itsevin/ 
+copyright_author_href: 'https://github.com/itsevin/'
+abbrlink: 56912
+date: 2023-06-23 11:22:28
 ---
 # Python应用领域和职业发展分析
 
@@ -51,7 +52,7 @@ Python在以下领域都有用武之地。
 
 ## 路线一-较为简单
 
-> 推荐小白选择这个路线，日后如果有需求再深入学习业不迟
+> 推荐小白选择这个路线，日后如果有需求再深入学习也不迟
 
 菜鸟教程学习Python： https://www.runoob.com/python3/python3-tutorial.html
 
