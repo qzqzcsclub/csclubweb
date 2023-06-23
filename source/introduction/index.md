@@ -71,5 +71,13 @@ date: 2023-06-10 00:00:00
 
 项目仓库： https://github.com/GregTaoo/GregBlog3
 
+## Ferrum Explorer
+
+由[25届江南社长NriotHrreion](https://github.com/NriotHrreion/)基于React+Typescript开发的网页端文件管理器
+
+项目仓库： https://github.com/nocpiun/ferrum
+
+Demo： https://ferrum-demo.nin.red （密码：123456）
+
 ---
 ***Tech Otakus Save The World.***
