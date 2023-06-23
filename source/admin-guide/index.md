@@ -126,7 +126,6 @@ description: 泉州七中网络安全社官网新版本开始建设
 
 所有文章的Front-matter：
 
-```
 |Front-matter|解释|
 |-|-|
 |title|【必需】文章标题|
@@ -149,7 +148,6 @@ description: 泉州七中网络安全社官网新版本开始建设
 |copyright_info|【可选】文章版权模块的版权声明文字|
 |highlight_shrink|【可选】配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)|
 |aside|【可选】显示侧边栏 (默认 true)|
-```
 
 本站点页面正常情况下统一要有的Front-matter：
 
