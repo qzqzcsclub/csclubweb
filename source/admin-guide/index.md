@@ -13,7 +13,7 @@ date: 2023-06-10 00:00:00
 
 - 初级：文章（通知、教程）、页面撰写
 - 中级：功能维护、站点美化
-- 高级：网站部署
+- 高级：网站部署，审核pr
 
 > 级别高的维护工作包括级别低的内容。同时级别高的工作需要题会低级别要求掌握的内容。
 
@@ -24,21 +24,21 @@ date: 2023-06-10 00:00:00
 ### 需要先掌握的东西
 
 1. 终端的使用
-2. git的下载和使用，有github账号
-3. npm和nodejs的下载和使用
-4. 能够访问github
+2. git的下载和使用
+3. github的使用
+4. npm和nodejs的下载和使用
 5. Markdown语法
 
 > 以上内容请自行上网学习
 
-### 拉取站点源码至本地
+### fork源码仓库并克隆至本地
 
-首先获得[站点源码远程仓库](https://github.com/qzqzcsclub/csclubweb)的访问和提交代码的权限，这个需要找管理社团github账号的人员。
+首先在github上fork[站点源码远程仓库](https://github.com/qzqzcsclub/csclubweb)
 
-然后在你要放置源码的地方打开终端，将[远程仓库](https://github.com/qzqzcsclub/csclubweb)克隆到本地（在这之前请确保你的本地git的用户名、邮箱、密钥和公钥已设置完毕）。
+然后在你要放置源码的地方打开终端，将你fork来的远程仓库克隆到本地（在这之前请确保你的本地git的用户名、邮箱、密钥和公钥已设置完毕）。
 
 ```bash
-git clone git@github.com:qzqzcsclub/csclubweb.git
+git clone git@github.com:<你的github地址>/csclubweb.git
 ```
 
 ### 安装Hexo和依赖包
@@ -184,17 +184,21 @@ date: 2023-06-10 00:00:00
 
 本站点使用了非常规的方法来区分通知和教程、分类教程（暂时没找到更好的方案）。通知和教程的区分是使用Hexo提供的分类功能实现的，所以文章分类只能填“内部通知”、“对外通知”、“教程”。教程的分类是使用Hexo提供的标签功能实现的，所以在教程文章的Front-matter中的`tag`中需要填写教程的分类，例如`python`。
 
-### 提交修改至远程仓库并实现站点自动部署
+### 提交代码至远程仓库
 
-在项目根目录的终端使用git提交修改至远程仓库
+在项目根目录的终端使用git提交修改至你fork来的远程仓库的其他分支（不是main分支就行，这里以patch分支为例）
 
 ```bash
 git add .
 git commit -m"<在这里描述你修改的内容>"
-git push origin main
+git push origin patch
 ```
 
-代码提交成功后，远程仓库的GitHub Actions就会自动部署站点，可以在 https://github.com/qzqzcsclub/csclubweb/actions 看到正在运行的工作流，状态显示橙色就是工作流正在运行，绿色就是成功，红色就是失败。一般绿色就是部署成功了，不过具体还得点进工作流查看具体日志。如果部署失败了就需要查看具体日志排查错误，实在不行就求助高级网站维护人员。
+### 提交pr
+
+代码提交到你的远程仓库后，在浏览器打开你的远程仓库，打开patch分支后点击 compare & pull request ，然后选择从你的patch分支合并到原本的仓库的main分支，再描述你的修改并提交就可以了。
+
+在有相关权限的人员审核并通过pr后，远程仓库的GitHub Actions就会自动部署站点，可以在 https://github.com/qzqzcsclub/csclubweb/actions 看到正在运行的工作流，状态显示橙色就是工作流正在运行，绿色就是成功，红色就是失败。一般绿色就是部署成功了，不过具体还得点进工作流查看具体日志。如果部署失败了就需要查看具体日志排查错误，实在不行就求助高级网站维护人员。
 
 ## 中级
 
@@ -208,11 +212,17 @@ Butterfly中文文档: https://butterfly.js.org/
 
 ### 现阶段站点部署方案
 
-现阶段本站点的部署方案是先将项目源码提交到[csclubweb](https://github.com/qzqzcsclub/csclubweb)，然后由工作流自动对项目进行渲染，并将渲染后的站点源码提交到已开启GitHub Page的[qzcsclub.github.io](https://github.com/qzcsclub/qzcsclub.github.io),提交后站点就会被GitHub Page自动上传到 https://qzcsclub.github.io/ 。
+现阶段本站点的部署方案是先将项目源码pr或者直接提交到[csclubweb](https://github.com/qzqzcsclub/csclubweb)，然后由工作流自动对项目进行渲染，并将渲染后的站点源码提交到已开启GitHub Page的[qzcsclub.github.io](https://github.com/qzcsclub/qzcsclub.github.io),提交后站点就会被GitHub Page自动上传到 https://qzcsclub.github.io/ 。
 
 ### 其他站点部署方案
 
 还有将站点同时部署到服务器的方案，该方案的代码已经在`./.github/workflows/autodeploy.yml`和`./.github/workflows/handdeploy.yml`实现，具体请见这两个文件的代码注释。
+
+### 维护要求
+
+高级维护工作需要修改和管理[csclubweb](https://github.com/qzqzcsclub/csclubweb)的直接权限，这个需要找管理社团github的人员获取
+
+需要定期审核[csclubweb](https://github.com/qzqzcsclub/csclubweb)的pr，不然别人的维护工作就白费了。
 
 ### GitHub Actions 说明
 
