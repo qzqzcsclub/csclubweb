@@ -200,9 +200,9 @@ git push origin main
 
 功能维护和站点优化要求基本掌握Hexo和Butterfly的使用方法。具体内容请查看相应文档进行学习：
 
-Hexo: https://hexo.io/zh-cn/docs/
+Hexo中文文档: https://hexo.io/zh-cn/docs/
 
-Butterfly: https://butterfly.js.org/
+Butterfly中文文档: https://butterfly.js.org/
 
 ## 高级
 
