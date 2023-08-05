@@ -7,4 +7,4 @@ date: 2023-06-10 00:00:00
 
 # 海报
 
-![泉州七中网络安全社海报](https://s2.loli.net/2023/06/22/XTimcSa6e92Hxv8.png)
+![泉州七中网络安全社海报](https://s2.loli.net/2023/08/05/9pG3xvbgR2PcI5t.png)
