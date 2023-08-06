@@ -8,6 +8,8 @@ copyright_author: NriotHrreion
 copyright_author_href: 'https://github.com/NriotHrreion/'
 abbrlink: 37628
 date: 2023-06-23 15:24:43
+top_image: https://s2.loli.net/2023/08/06/869YMzPfa1pywmL.png
+cover: https://s2.loli.net/2023/08/06/869YMzPfa1pywmL.png
 ---
 
 > **注意**: Javascript这门语言和Java语言并没有任何关系，这是两种完全不同的语言。<br>Javascript的发明者在当时只是为了蹭Java的热度才这么命名的。

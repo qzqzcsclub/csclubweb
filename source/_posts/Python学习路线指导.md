@@ -8,6 +8,8 @@ copyright_author: ITSevin
 copyright_author_href: 'https://github.com/itsevin/'
 abbrlink: 56912
 date: 2023-06-23 11:22:28
+top_image: https://s2.loli.net/2023/08/06/DNglPraEbhQdMuj.png
+cover: https://s2.loli.net/2023/08/06/DNglPraEbhQdMuj.png
 ---
 # Python应用领域和职业发展分析
 
