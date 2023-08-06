@@ -1,35 +1,10 @@
+# 泉州七中网络安全社官网
+
+欢迎访问：**[https://csclub.nin.red](https://csclub.nin.red)**
+
 ---
-title: 网站维护指南
-date: 2023-06-10 00:00:00
----
 
-# 站点介绍
-
-本站点为纯静态站点，由[Hexo框架](https://hexo.io/zh-cn/)和[Butterfly主题](https://butterfly.js.org/)搭建，部署于[GitHub Page](https://pages.github.com/)。
-
-> 也有部署至服务器的方案，但是因为社团现阶段没有服务器所以使用免费方案。
-
-# 网站维护工作
-
-- 初级：文章（通知、教程）、页面撰写
-- 中级：功能维护、站点美化
-- 高级：网站部署，审核pr
-
-> 级别高的维护工作包括级别低的内容。同时级别高的工作需要题会低级别要求掌握的内容。
-
-# 网站分级维护指南
-
-## 初级
-
-### 需要先掌握的东西
-
-1. 终端的使用
-2. git的下载和使用
-3. github的使用
-4. npm和nodejs的下载和使用
-5. Markdown语法
-
-> 以上内容请自行上网学习
+## 站点维护指南
 
 ### fork源码仓库并克隆至本地
 
@@ -59,9 +34,7 @@ npm install
 
 在`./source/`中有所有页面和文章的md文件，例如文章“泉州七中网络安全社官网开始建设”的md文件就在`./source/_posts/泉州七中网络安全社官网开始建设.md`。打开相对应的md文件修改内容即可。
 
-### 新建文章和页面
-
-#### 新建文章
+### 新建文章
 
 在项目根目录的终端输入
 
@@ -77,7 +50,7 @@ hexo new "网安社yyds"
 
 然后在相应目录就会自动生成新文章对应的md文件
 
-#### 新建页面
+### 新建页面
 
 ```bash
 hexo new "<页面名>"
@@ -209,8 +182,6 @@ git push origin patch
 
 代码提交到你的远程仓库后，在浏览器打开你的远程仓库，打开patch分支后点击 compare & pull request ，然后选择从你的patch分支合并到原本的仓库的main分支，再描述你的修改并提交就可以了。
 
-<!-- 在有相关权限的人员审核并通过pr后，远程仓库的GitHub Actions就会自动部署站点，可以在 https://github.com/qzqzcsclub/csclubweb/actions 看到正在运行的工作流，状态显示橙色就是工作流正在运行，绿色就是成功，红色就是失败。一般绿色就是部署成功了，不过具体还得点进工作流查看具体日志。如果部署失败了就需要查看具体日志排查错误，实在不行就求助高级网站维护人员。 -->
-
 ### 拉取远程仓库的更改
 
 在你再维护站点可能会遇到一个问题，就是在你提交的代码合并到远程仓库后又有其他人合并了代码，这时候你的仓库的代码就不是最新的了，这个时候就需要你将你的仓库和远程仓库同步，同步方法就是在你的github仓库页面点击Sync fork，然后点击Update sync，如果是显示“This branch is not behind the upstream qzqzcsclub:main”的话就代表你的仓库已经是最新的了，就不用更新了。你的仓库更新到了最新，但是你电脑上的仓库还没有，你需要将你的仓库拉取到你的本地仓库，就是在你项目根目录的终端输入：
@@ -221,34 +192,18 @@ git pull origin main
 
 拉取成功后就可以继续维护站点了。
 
-## 中级
+---
 
-功能维护和站点优化要求基本掌握Hexo和Butterfly的使用方法。具体内容请查看相应文档进行学习：
-
-Hexo中文文档: https://hexo.io/zh-cn/docs/
-
-Butterfly中文文档: https://butterfly.js.org/
-
-## 高级
-
-### 现阶段站点部署方案
+## 站点部署方案
 
 现阶段本站点的部署方案是先将项目源码pr或者直接提交到[csclubweb](https://github.com/qzqzcsclub/csclubweb)，然后由Netlify自动对项目进行渲染，并将渲染后的站点源码提交到[https://csclub.nin.red](https://csclub.nin.red)。
 
-<!-- ### 其他站点部署方案
-
-还有将站点同时部署到服务器的方案，该方案的代码已经在`./.github/workflows/autodeploy.yml`和`./.github/workflows/handdeploy.yml`实现，具体请见这两个文件的代码注释。 -->
-
-### 维护要求
+## 维护要求
 
 高级维护工作需要修改和管理[csclubweb](https://github.com/qzqzcsclub/csclubweb)的直接权限，这个需要找管理社团github的人员获取
 
 需要定期审核[csclubweb](https://github.com/qzqzcsclub/csclubweb)的pr，不然别人的维护工作就白费了。
 
-### GitHub Actions 说明
+## GitHub Actions 说明
 
 具体请见[GitHub Actions 中文文档](https://docs.github.com/zh/actions/learn-github-actions/understanding-github-actions)
-
-# 留言
-
-该站点应该在每一届都要安排相应的不同级别的维护人员，高级维护人员至少要有一个，初级和中级的维护人员数量按实际情况决定。站点维护人员应该定期维护网站（修改页面至最新，发布文章等）。
