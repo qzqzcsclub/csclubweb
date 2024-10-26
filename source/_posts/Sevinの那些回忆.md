@@ -7,8 +7,8 @@ copyright_author: ITSevin
 copyright_author_href: 'https://github.com/itsevin/'
 abbrlink: 666
 date: 2024-10-26 21:32:50
-top_image: https://sm.ms/image/zkcACwvRtEIa3Pq
-cover: https://sm.ms/image/HjfsKqUpb3Ny4Io
+top_image: https://s2.loli.net/2024/10/26/zkcACwvRtEIa3Pq.jpg
+cover: https://s2.loli.net/2024/10/26/HjfsKqUpb3Ny4Io.jpg
 ---
 > 高中生活转瞬即逝，再留恋也无法回到过去，吾辈青年当向前看，追求个人理想……
 
