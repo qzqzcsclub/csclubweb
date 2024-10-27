@@ -1,0 +1,5 @@
+[[redirects]]
+    from = "https://csclub.nin.red/*"
+    to = "https://csc.iteacher.org.cn/:splat"
+    status = 301
+    force = true

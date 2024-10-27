@@ -71,13 +71,13 @@ date: 2023-06-10 00:00:00
 
 项目仓库： https://github.com/GregTaoo/GregBlog3
 
-## Ferrum Explorer
+## Calcium 计算器
 
-由[25届江南社长NriotHrreion](https://github.com/NriotHrreion/)基于React+Typescript开发的网页端文件管理器
+由[25届江南社长NoahHrreion](https://github.com/NriotHrreion/)基于React+Typescript开发的多功能网页计算器
 
-项目仓库： https://github.com/nocpiun/ferrum
+项目仓库： https://github.com/nocpiun/calcium
 
-Demo： https://ferrum-demo.nin.red （密码：123456）
+Demo： https://calcium.js.org
 
 ---
 ***Tech Otakus Save The World.***

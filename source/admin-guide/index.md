@@ -233,7 +233,7 @@ Butterfly中文文档: https://butterfly.js.org/
 
 ### 现阶段站点部署方案
 
-现阶段本站点的部署方案是先将项目源码pr或者直接提交到[csclubweb](https://github.com/qzqzcsclub/csclubweb)，然后由Netlify自动对项目进行渲染，并将渲染后的站点源码提交到[https://csclub.nin.red](https://csclub.nin.red)。
+现阶段本站点的部署方案是先将项目源码pr或者直接提交到[csclubweb](https://github.com/qzqzcsclub/csclubweb)，然后由Netlify自动对项目进行渲染，并将渲染后的站点源码提交到[https://csc.iteacher.org.cn](https://csc.iteacher.org.cn)。
 
 <!-- ### 其他站点部署方案
 
