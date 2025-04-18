@@ -31,7 +31,7 @@ jobs:
           npm install hexo-cli -g
       
       - name: Cache Modules # 缓存 Node 插件
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         id: cache-modules
         with:
           path: node_modules
